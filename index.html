@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home / Twitter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <nav aria-label="Main navigation">
+    <a class="logo" href="index.html">Twitter</a>
+    <a class="active" href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="notifications.html">Notifications</a>
+    <a href="messages.html">Messages</a>
+    <a href="bookmarks.html">Bookmarks</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+  <main>
+    <header><h1>Home</h1></header>
+    <div class="tabs"><strong>For you</strong><span>Following</span></div>
+    <section>
+      <textarea aria-label="Tweet draft" placeholder="What’s happening?"></textarea>
+      <div class="composer-footer">
+        <label>Photo <input type="file" accept="image/*"></label>
+        <button disabled>Tweet</button>
+      </div>
+    </section>
+    <article>
+      <div class="author">
+        <span class="avatar">SC</span><strong>Sarah Chen</strong>
+        <small>@sarahchen · 2h</small>
+      </div>
+      <p>The best products don’t just solve problems. They make you feel something.</p>
+      <p>Design for humans, not just users. ✨</p>
+      <div class="actions">
+        <a href="messages.html">Reply · 24</a>
+        <label><input type="checkbox"> Repost</label>
+        <label><input type="checkbox"> Like</label>
+      </div>
+    </article>
+    <article>
+      <div class="author">
+        <span class="avatar">DF</span><strong>Daniel Foster</strong>
+        <small>@daniel.foster · 3h</small>
+      </div>
+      <p>A little reminder to step away from the screen.</p>
+      <p>Spent the weekend in the Dolomites. Still thinking about that view. 🏔️</p>
+      <div class="actions">
+        <a href="messages.html">Reply · 38</a>
+        <label><input type="checkbox"> Repost</label>
+        <label><input type="checkbox"> Like</label>
+      </div>
+    </article>
+  </main>
+  <aside>
+    <form action="explore.html">
+      <input type="search" name="q" placeholder="Search Twitter" aria-label="Search Twitter">
+    </form>
+    <section>
+      <h2>What’s happening</h2>
+      <a class="trend" href="explore.html"><small>Technology · Trending</small><strong>#BuildInPublic</strong><small>12.8K Tweets</small></a>
+      <a class="trend" href="explore.html"><small>Design · Trending</small><strong>Less, but better</strong><small>4,291 Tweets</small></a>
+    </section>
+  </aside>
+</div>
+</body>
+</html>
