@@ -1,0 +1,117 @@
+:root {
+  --blue: #1da1f2;
+  --blue-dark: #1a91da;
+  --text: #14171a;
+  --muted: #657786;
+  --border: #e6ecf0;
+  --panel: #f5f8fa;
+  --white: #fff;
+  --error: #e0245e;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--panel);
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  padding: 32px;
+  text-align: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  color: var(--blue);
+  margin: 0 auto 12px;
+  display: block;
+}
+
+h1 { font-size: 24px; margin: 0 0 6px; }
+
+.sub { color: var(--muted); font-size: 15px; margin: 0 0 24px; }
+
+form { text-align: left; }
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font: inherit;
+  font-weight: normal;
+}
+
+input:focus { outline: 2px solid var(--blue); border-color: var(--blue); }
+
+.error {
+  color: var(--error);
+  font-size: 14px;
+  margin: 0 0 12px;
+  display: none;
+}
+
+.notice {
+  color: #17bf63;
+  font-size: 14px;
+  margin: 0 0 12px;
+  display: none;
+}
+
+.submit {
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  border-radius: 9999px;
+  background: var(--blue);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.submit:hover { background: var(--blue-dark); }
+.submit:disabled { opacity: 0.6; cursor: default; }
+
+.switch {
+  margin: 20px 0 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.switch button {
+  background: none;
+  border: 0;
+  color: var(--blue);
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+.switch button:hover { text-decoration: underline; }
+
+.name-field { display: none; }
