@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Messages / Twitter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <nav aria-label="Main navigation">
+    <a class="logo" href="index.html">Twitter</a>
+    <a href="home.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="notifications.html">Notifications</a>
+    <a class="active" href="messages.html">Messages</a>
+    <a href="bookmarks.html">Bookmarks</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+  <main>
+    <header><h1>Messages</h1></header>
+    <section>
+      <h2>Your conversations</h2>
+      <form action="messages.html">
+        <input type="search" name="q" placeholder="Search Direct Messages" aria-label="Search Direct Messages">
+      </form>
+    </section>
+    <details>
+      <summary><span class="avatar">SC</span><strong>Sarah Chen</strong> <small>· 12m</small></summary>
+      <p class="message">Hey! It was really nice to hear from you.</p>
+      <p class="message">That sounds great! Let’s catch up soon.</p>
+      <section><input type="text" placeholder="Start a message" aria-label="Message Sarah Chen"></section>
+    </details>
+    <details>
+      <summary><span class="avatar">DF</span><strong>Daniel Foster</strong> <small>· 1h</small></summary>
+      <p class="message">Just sent you the photos from the trip. 🏔️</p>
+      <section><input type="text" placeholder="Start a message" aria-label="Message Daniel Foster"></section>
+    </details>
+    <details>
+      <summary><span class="avatar">EP</span><strong>Emily Parker</strong> <small>· 3h</small></summary>
+      <p class="message">Thanks for sharing your work!</p>
+      <section><input type="text" placeholder="Start a message" aria-label="Message Emily Parker"></section>
+    </details>
+  </main>
+  <aside>
+    <section>
+      <h2>Who to follow</h2>
+      <p><strong>Figma</strong> <small>@figma</small></p>
+      <label><input type="checkbox"> Follow</label>
+    </section>
+  </aside>
+</div>
+</body>
+</html>
